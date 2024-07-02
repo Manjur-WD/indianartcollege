@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+@media(min-width: 1440px) {
+    .container {
+        max-width: 90% !important;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: rgb(43, 42, 42);
+}
+
+header .top-head {
+    position: relative;
+    border-bottom: 5px solid black;
+}
+
+header .top-head::after {
+    content: "";
+    background-color: orange;
+    height: 50%;
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(100px);
+}
+
+header .top-head a.logo {
+    display: block;
+    text-decoration: none;
+}
+
+header .top-head a.logo h1,
+header .top-head a.logo h2 {
+    color: orange;
+}
+
+header .top-head a.logo p {
+    font-size: 12px;
+}
+
+header .useful-links a {
+    color: orange;
+    font-size: 12px;
+    padding: 0 20px;
+    border-right: 1px solid orange;
+}
+
+header .useful-links a:first-child {
+    padding-left: 0;
+}
+
+header .useful-links a:last-child {
+    border-right: none;
+}
+
+header .search-section input,
+header .search-section button {
+    height: 20px;
+    font-size: 12px;
+}
+
+header .search-section button {
+    padding: 0;
+    font-size: 12px;
+    padding: 0 10px;
+    color: orange;
+}
+
+header .contact-head a {
+    font-size: 12px;
+    color: white;
+    padding: 0 5px;
+}
+
+header .contact-head a i {
+    color: orange;
+    margin-right: 5px;
+}
+
+header .main-head {
+    background: orange;
+}
+
+header .nav-link {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+header .online-admission {
+    font-size: 12px;
+}
+
+.hero-carousel .carousel {
+    margin-top: 20px;
+    height: 60vh;
+    border-radius: 30px;
+    border: 2px solid orange;
+    overflow: hidden;
+}
+
+.hero-carousel .carousel img,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hero-carousel .carousel-control-prev i,
+.hero-carousel .carousel-control-next i {
+    color: orange;
+    font-size: 25px;
+}
+
+.hero-carousel .carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.hero-carousel .carousel-indicators button.active {
+    background-color: orange;
+}
+
+.news-info {
+    margin-top: 20px;
+}
+
+.news-info .latest-news {
+    height: 400px;
+    background: linear-gradient(to bottom, orange, white);
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.news-info .latest-news ul li {
+    font-size: 16px;
+}
+
+.news-info .info {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px orange;
+}
+
+.news-info .info h2 {
+    background-color: orange;
+}
+
+
+.our-departments h2 {
+    font-size: 5vmin;
+    font-weight: 900;
+}
+
+.our-departments h2 span {
+    color: orange;
+}
+
+.dept-card {
+    border-radius: 0 0 30px 0;
+    box-shadow: 0 0 10px rgb(168, 167, 167);
+}
+
+.dept-card .dept-img {
+    position: relative;
+    background-color: orange;
+    padding: 10px 10px 12px 10px;
+}
+
+.dept-card .dept-img img {
+    border-radius: 20px;
+}
+
+.dept-card p {
+    height: 100%;
+    width: 100%;
+}
+
+.dept-card .dept-img .dept-name {
+    position: absolute;
+    height: auto;
+    width: 80%;
+    top: 80%;
+    background-color: white;
+    display: inline-block;
+    left: 10%;
+    margin: 0;
+    border-radius: 15px;
+    color: darkred;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+}
