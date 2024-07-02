@@ -1,12 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: myriad;
+    src: url(../fonts-myriad/fonnts.com-Myriad_Pro.otf);
+}
+
+@font-face {
+    font-family: bahn;
+    src: url(../fonts-bahn/fonnts.com-Bahnschrift.ttf);
+}
+
+.font-bahn {
+    font-family: bahn;
+}
+
+.font-myriad {
+    font-family: myriad;
+}
+
 
 body {
+    background: url(../images/BG-01.png);
     font-family: "Poppins", sans-serif;
 }
 
-@media(min-width: 1440px) {
+.font-mont {
+    font-family: "Montserrat", sans-serif;
+}
+
+@media(min-width: 1200px) {
     .container {
-        max-width: 90% !important;
+        max-width: 95% !important;
     }
 }
 
@@ -25,7 +50,7 @@ header .top-head {
 
 header .top-head::after {
     content: "";
-    background-color: orange;
+    background-color: #EFAB00;
     height: 50%;
     width: 100px;
     display: block;
@@ -43,7 +68,15 @@ header .top-head a.logo {
 
 header .top-head a.logo h1,
 header .top-head a.logo h2 {
-    color: orange;
+    color: #EFAB00;
+}
+
+header .top-head a.logo h1 {
+    font-size: 4.5vmin;
+}
+
+header .top-head a.logo h2 {
+    font-size: 2vmin;
 }
 
 header .top-head a.logo p {
@@ -51,10 +84,10 @@ header .top-head a.logo p {
 }
 
 header .useful-links a {
-    color: orange;
+    color: #EFAB00;
     font-size: 12px;
     padding: 0 20px;
-    border-right: 1px solid orange;
+    border-right: 1px solid #EFAB00;
 }
 
 header .useful-links a:first-child {
@@ -75,27 +108,27 @@ header .search-section button {
     padding: 0;
     font-size: 12px;
     padding: 0 10px;
-    color: orange;
+    color: #EFAB00;
 }
 
 header .contact-head a {
-    font-size: 12px;
+    font-size: 10px;
     color: white;
     padding: 0 5px;
 }
 
 header .contact-head a i {
-    color: orange;
+    color: #EFAB00;
     margin-right: 5px;
 }
 
 header .main-head {
-    background: orange;
+    background: #EFAB00;
 }
 
 header .nav-link {
     color: black;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -105,9 +138,9 @@ header .online-admission {
 
 .hero-carousel .carousel {
     margin-top: 20px;
-    height: 60vh;
+    height: 90vh;
     border-radius: 30px;
-    border: 2px solid orange;
+    border: 2px solid #EFAB00;
     overflow: hidden;
 }
 
@@ -121,7 +154,7 @@ header .online-admission {
 
 .hero-carousel .carousel-control-prev i,
 .hero-carousel .carousel-control-next i {
-    color: orange;
+    color: #EFAB00;
     font-size: 25px;
 }
 
@@ -132,7 +165,7 @@ header .online-admission {
 }
 
 .hero-carousel .carousel-indicators button.active {
-    background-color: orange;
+    background-color: #EFAB00;
 }
 
 .news-info {
@@ -140,26 +173,75 @@ header .online-admission {
 }
 
 .news-info .latest-news {
-    height: 400px;
-    background: linear-gradient(to bottom, orange, white);
-    border-radius: 30px;
-    border: 2px solid black;
+    height: 300px;
+    background: linear-gradient(to bottom, #EFAB00, rgba(255, 255, 255, 0.53));
+    border-radius: 20px 20px 0 0;
+    border: 1px solid black;
+    border-bottom: none;
+    position: relative;
+}
+
+
+.latest-news-list{
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-info .latest-news:after{
+    content: "";
+    background: #EFAB00;
+    height: 100px;
+    width: 101%;
+    left: -2px;
+    bottom: -50px;
+    background-color: white;
+    display: block;
+    position: absolute;
+filter: blur(10px);
+}
+
+.news-info .latest-news ul{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      transition: top 0.1s linear;
 }
 
 .news-info .latest-news ul li {
     font-size: 16px;
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.news-info .latest-news ul li:hover{
+    background-color: #2B2D36;
+    color: white
+}
+
+.news-info .latest-news ul li {
+    font-size: 12px;
 }
 
 .news-info .info {
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 10px orange;
+    box-shadow: 0 0 10px #EFAB00;
 }
 
 .news-info .info h2 {
-    background-color: orange;
+    background-color: #EFAB00;
 }
 
+.our-departments{
+    background: url(../images/BG-eft-01.png) no-repeat center/contain;
+}
 
 .our-departments h2 {
     font-size: 5vmin;
@@ -167,22 +249,38 @@ header .online-admission {
 }
 
 .our-departments h2 span {
-    color: orange;
+    color: #EFAB00;
 }
 
 .dept-card {
+    background-color: white;
     border-radius: 0 0 30px 0;
     box-shadow: 0 0 10px rgb(168, 167, 167);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.dept-card:hover{
+    scale: 0.9;
+}
+
+.dept-card:hover img{
+    scale: 1.2;
 }
 
 .dept-card .dept-img {
     position: relative;
-    background-color: orange;
+    background-color: #EFAB00;
     padding: 10px 10px 12px 10px;
+    overflow: hidden;
 }
 
 .dept-card .dept-img img {
     border-radius: 20px;
+    height: 180px !important;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
 }
 
 .dept-card p {
@@ -191,13 +289,19 @@ header .online-admission {
 }
 
 .dept-card .dept-img .dept-name {
+    font-size: 12px;
+    font-weight: 900 !important;
+    line-height: 12px !important;
+    padding: 5px !important;
     position: absolute;
     height: auto;
-    width: 80%;
+    width: 70%;
     top: 80%;
     background-color: white;
+    box-shadow: 0 0 10px white;
     display: inline-block;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
     border-radius: 15px;
     color: darkred;
@@ -205,4 +309,81 @@ header .online-admission {
     text-align: center;
     font-weight: 600;
     line-height: 20px;
+}
+
+.dept-card .dept-desc {
+    font-size: 13px;
+    padding: 10px 10px;
+}
+
+.recruitment-company {
+    position: relative;
+    background: #EFAB00;
+    height: 100px;
+}
+
+.company-slider {
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.company-slider .item img{
+    height: 100px;
+    object-fit: contain;
+}
+
+footer {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.299)), url(../images/lower\ BG-01.jpg) no-repeat center/cover; */
+    background:  url(../images/lower\ BG-01.jpg) no-repeat center/cover;
+}
+
+footer .top-foot {
+    padding: 150px 50px 50px 50px ;
+}
+
+footer .useful-link li i {
+    color: #EFAB00;
+}
+
+footer .useful-link li a {
+    color: #A2A2A2;
+    display: inline-block;
+    transition: all 0.1s linear;
+}
+
+footer .useful-link li a:hover {
+    color: #EFAB00;
+    scale: 0.9;
+}
+
+footer .bottom-head {
+    background-color: #2B2D36;
+}
+
+footer .bottom-head h2,
+footer .bottom-head p{
+    color: #EFAB00;
+    font-weight: bolder;
+}
+
+.email-us button{
+    background-color: black;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.email-us input{
+    width: 250px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+}
+
+.email-us input:focus{
+    border: none;
+    outline: none;
 }
