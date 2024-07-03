@@ -387,3 +387,33 @@ footer .bottom-head p{
     border: none;
     outline: none;
 }
+
+.dropdown-menu {
+    background: black;
+    border-radius: 0px;
+    animation: slideUp 0.3s ease-in-out forwards;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Still needed for visibility */
+  }
+
+.dropdown-menu li a {
+    color: orange;
+    font-size: 12px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: orange;
+}
+
+@keyframes slideUp {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
