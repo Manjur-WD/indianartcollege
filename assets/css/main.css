@@ -392,11 +392,12 @@ footer .bottom-head p{
     background: rgba(0, 0, 0, 0.582);
     border-radius: 0px;
     animation: slideUp 0.8s ease-in-out forwards;
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block; /* Still needed for visibility */
-  }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    /* Still needed for visibility */
+}
 
 .dropdown-menu li a {
     color: orange;
@@ -408,13 +409,30 @@ footer .bottom-head p{
     color: white;
 }
 
+.fixed-top {
+    animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        /* Initially hidden above viewport */
+    }
+
+    to {
+        transform: translateY(0);
+        /* Animate to normal position */
+    }
+}
+
 @keyframes slideUp {
     from {
-      transform: translateX(50px);
-      opacity: 0;
+        transform: translateX(50px);
+        opacity: 0;
     }
+
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}
