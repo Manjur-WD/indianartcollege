@@ -389,9 +389,9 @@ footer .bottom-head p{
 }
 
 .dropdown-menu {
-    background: black;
+    background: rgba(0, 0, 0, 0.582);
     border-radius: 0px;
-    animation: slideUp 0.3s ease-in-out forwards;
+    animation: slideUp 0.8s ease-in-out forwards;
   }
   
   .dropdown:hover .dropdown-menu {
@@ -405,6 +405,7 @@ footer .bottom-head p{
 
 .dropdown-menu li a:hover {
     background-color: orange;
+    color: white;
 }
 
 @keyframes slideUp {
