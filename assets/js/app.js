@@ -50,3 +50,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start the scrolling when the page loads
     startScrolling();
   });
+
+const mainHead = document.querySelector(".main-head");
+const scrollY = window.scrollY; // Initial scroll position
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+  const shouldBeFixed = currentScrollY > scrollY; // Check if scrolled down
+
+  if (shouldBeFixed) {
+    mainHead.classList.add("fixed-top"); // Add 'fixed' class for styling
+  } else {
+    mainHead.classList.remove("fixed-top"); // Remove 'fixed' class
+  }
+});
