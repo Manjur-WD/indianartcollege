@@ -20,36 +20,36 @@ $('.company-slider .owl-carousel').owlCarousel({
     }
 })
 
-document.addEventListener('DOMContentLoaded', function () {
-    const latestNews = document.querySelector('.latest-news');
-    const newsList = latestNews.querySelector('ul');
-    const listHeight = newsList.scrollHeight;
-    const containerHeight = latestNews.offsetHeight;
-    const midpoint = containerHeight / 2;
+// document.addEventListener('DOMContentLoaded', function () {
+//     const latestNews = document.querySelector('.latest-news');
+//     const newsList = latestNews.querySelector('ul');
+//     const listHeight = newsList.scrollHeight;
+//     const containerHeight = latestNews.offsetHeight;
+//     const midpoint = containerHeight / 2;
     
-    let scrollInterval;
-    let topPosition = 0;
+//     let scrollInterval;
+//     let topPosition = 0;
 
-    function startScrolling() {
-      scrollInterval = setInterval(() => {
-        topPosition -= 1;
-        if (Math.abs(topPosition) >= listHeight - midpoint) {
-          topPosition = 0;
-        }
-        newsList.style.top = `${topPosition}px`;
-      }, 50); // Adjust the speed by changing the interval time
-    }
+//     function startScrolling() {
+//       scrollInterval = setInterval(() => {
+//         topPosition -= 1;
+//         if (Math.abs(topPosition) >= listHeight - midpoint) {
+//           topPosition = 0;
+//         }
+//         newsList.style.top = `${topPosition}px`;
+//       }, 50); // Adjust the speed by changing the interval time
+//     }
 
-    function stopScrolling() {
-      clearInterval(scrollInterval);
-    }
+//     function stopScrolling() {
+//       clearInterval(scrollInterval);
+//     }
 
-    latestNews.addEventListener('mouseenter', stopScrolling);
-    latestNews.addEventListener('mouseleave', startScrolling);
+//     latestNews.addEventListener('mouseenter', stopScrolling);
+//     latestNews.addEventListener('mouseleave', startScrolling);
 
-    // Start the scrolling when the page loads
-    startScrolling();
-  });
+//     // Start the scrolling when the page loads
+//     startScrolling();
+//   });
 
 const mainHead = document.querySelector(".main-head");
 const scrollY = window.scrollY; // Initial scroll position

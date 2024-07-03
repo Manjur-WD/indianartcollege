@@ -31,7 +31,7 @@ body {
 
 @media(min-width: 1200px) {
     .container {
-        max-width: 95% !important;
+        max-width: 93% !important;
     }
 }
 
@@ -182,13 +182,28 @@ header .online-admission {
 }
 
 
-.latest-news-list{
+.latest-news-list {
     height: 220px;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
+    padding: 10px;
 }
 
-.news-info .latest-news:after{
+.latest-news-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.latest-news-list::-webkit-scrollbar-track {
+    border: 1px solid rgb(140, 139, 139);
+}
+
+/* Handle */
+.latest-news-list::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+.news-info .latest-news:after {
     content: "";
     background: #EFAB00;
     height: 100px;
@@ -198,18 +213,18 @@ header .online-admission {
     background-color: white;
     display: block;
     position: absolute;
-filter: blur(10px);
+    filter: blur(10px);
 }
 
-.news-info .latest-news ul{
+.news-info .latest-news ul {
     position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      transition: top 0.1s linear;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: top 0.1s linear;
 }
 
 .news-info .latest-news ul li {
@@ -220,7 +235,7 @@ filter: blur(10px);
     cursor: pointer;
 }
 
-.news-info .latest-news ul li:hover{
+.news-info .latest-news ul li:hover {
     background-color: #2B2D36;
     color: white
 }
@@ -239,7 +254,7 @@ filter: blur(10px);
     background-color: #EFAB00;
 }
 
-.our-departments{
+.our-departments {
     background: url(../images/BG-eft-01.png) no-repeat center/contain;
 }
 
@@ -260,11 +275,11 @@ filter: blur(10px);
     transition: all 0.3s ease-in-out;
 }
 
-.dept-card:hover{
+.dept-card:hover {
     scale: 0.9;
 }
 
-.dept-card:hover img{
+.dept-card:hover img {
     scale: 1.2;
 }
 
@@ -329,18 +344,18 @@ filter: blur(10px);
     border-radius: 20px;
 }
 
-.company-slider .item img{
+.company-slider .item img {
     height: 100px;
     object-fit: contain;
 }
 
 footer {
     /* background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.299)), url(../images/lower\ BG-01.jpg) no-repeat center/cover; */
-    background:  url(../images/lower\ BG-01.jpg) no-repeat center/cover;
+    background: url(../images/lower\ BG-01.jpg) no-repeat center/cover;
 }
 
 footer .top-foot {
-    padding: 150px 50px 50px 50px ;
+    padding: 150px 50px 50px 50px;
 }
 
 footer .useful-link li i {
@@ -363,19 +378,19 @@ footer .bottom-head {
 }
 
 footer .bottom-head h2,
-footer .bottom-head p{
+footer .bottom-head p {
     color: #EFAB00;
     font-weight: bolder;
 }
 
-.email-us button{
+.email-us button {
     background-color: black;
     border: none;
     padding: 5px 10px;
     margin-left: 10px;
 }
 
-.email-us input{
+.email-us input {
     width: 250px;
     padding: 10px 10px;
     border-radius: 30px;
@@ -383,7 +398,7 @@ footer .bottom-head p{
     font-size: 12px;
 }
 
-.email-us input:focus{
+.email-us input:focus {
     border: none;
     outline: none;
 }
@@ -435,4 +450,76 @@ footer .bottom-head p{
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+/* ABOUT PAGE */
+
+.about-college {
+    padding: 20px 50px;
+}
+
+.about-college .breadcrumb-wrap {
+    background: linear-gradient(to right, white, white);
+    padding: 20px 20px;
+    text-align: end;
+    box-shadow: 0 0 10px #dcdcdb;
+}
+
+.about-college .breadcrumb-wrap a {
+    color: black;
+    font-weight: 500;
+    text-shadow: 0 0 10px #EFAB00;
+}
+
+.about-college .breadcrumb-wrap a:hover {
+    display: inline-block;
+    scale: 0.9;
+}
+
+.about-college .breadcrumb-wrap a.active {
+    color: #EFAB00;
+    text-shadow: 0 0 10px white;
+}
+
+.about-content .head-start {
+    display: inline-block;
+    color: #EFAB00;
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.about-content p{
+    font-size: 14px;
+    color: #2B2D36;
+}
+
+.about-content h1{
+    font-size: x-large;
+}
+
+.about-college .contact-details h2{
+font-size: 20px;
+color: #EFAB00;
+}
+
+.about-college img{
+    border: 1px solid #EFAB00;
+    background-color: #f2f2f2;
+}
+
+.about-college h3{
+    background: linear-gradient(#EFAB00,white);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    padding: 10px;
+}
+.google-map {
+    border: 1px solid #EFAB00;
+    margin: 40px auto;
+    border-radius: 30px;
+    overflow: hidden;
 }
