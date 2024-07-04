@@ -20,6 +20,7 @@
 }
 
 
+
 body {
     background: url(../images/BG-01.png);
     font-family: "Poppins", sans-serif;
@@ -458,7 +459,8 @@ footer .bottom-head p {
     padding: 20px 50px;
 }
 
-.about-college .breadcrumb-wrap {
+.about-college .breadcrumb-wrap,
+.rules-and-regulations-content .breadcrumb-wrap {
     background: linear-gradient(to right, white, white);
     padding: 20px 20px;
     text-align: end;
@@ -481,7 +483,8 @@ footer .bottom-head p {
     text-shadow: 0 0 10px white;
 }
 
-.about-content .head-start {
+.about-content .head-start ,
+.rules-and-regulations-content .head-start{
     display: inline-block;
     color: #EFAB00;
     border: 1px solid black;
@@ -522,4 +525,14 @@ color: #EFAB00;
     margin: 40px auto;
     border-radius: 30px;
     overflow: hidden;
+}
+
+/* RULES AND REGULATIONS */
+
+.rules-regulation li i{
+    color: #EFAB00;
+}
+
+.rules-regulation li{
+    font-size: 14px;
 }
