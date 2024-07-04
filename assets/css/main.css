@@ -542,5 +542,6 @@ color: #EFAB00;
 }
 
 .rules-regulation li{
+    display: flex;
     font-size: 14px;
 }
