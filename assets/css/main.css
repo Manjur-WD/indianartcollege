@@ -453,19 +453,22 @@ footer .bottom-head p {
     }
 }
 
-/* ABOUT PAGE */
+
 
 .about-college,
-.rules-and-regulations {
+.rules-and-regulations,
+.college-profile {
     padding: 20px 50px;
 }
 
-.rules-and-regulations{
+.rules-and-regulations,
+.college-profile {
     border-bottom: 4px solid #EFAB00;
 }
 
 .about-college .breadcrumb-wrap,
-.rules-and-regulations .breadcrumb-wrap {
+.rules-and-regulations .breadcrumb-wrap,
+.college-profile .breadcrumb-wrap {
     background: linear-gradient(to right, white, white);
     padding: 20px 20px;
     text-align: end;
@@ -473,27 +476,31 @@ footer .bottom-head p {
 }
 
 .about-college .breadcrumb-wrap a,
-.rules-and-regulations .breadcrumb-wrap a {
+.rules-and-regulations .breadcrumb-wrap a,
+.college-profile .breadcrumb-wrap a {
     color: black;
     font-weight: 500;
     text-shadow: 0 0 10px #EFAB00;
     text-wrap: nowrap;
 }
 
-.about-college .breadcrumb-wrap a:hover ,
-.rules-and-regulations .breadcrumb-wrap a:hover {
+.about-college .breadcrumb-wrap a:hover,
+.rules-and-regulations .breadcrumb-wrap a:hover,
+.college-profile .breadcrumb-wrap a:hover {
     display: inline-block;
     scale: 0.9;
 }
 
 .about-college .breadcrumb-wrap a.active,
-.rules-and-regulations .breadcrumb-wrap a.active {
+.rules-and-regulations .breadcrumb-wrap a.active,
+.college-profile .breadcrumb-wrap a.active {
     color: #EFAB00;
     text-shadow: 0 0 10px white;
 }
 
-.about-content .head-start ,
-.rules-and-regulations-content .head-start{
+.about-content .head-start,
+.rules-and-regulations-content .head-start,
+.college-profile .head-start {
     display: inline-block;
     color: #EFAB00;
     border: 1px solid black;
@@ -502,33 +509,34 @@ footer .bottom-head p {
     border-radius: 10px;
 }
 
-.about-content p{
+.about-content p {
     font-size: 14px;
     color: #2B2D36;
 }
 
-.about-content h1{
+.about-content h1 {
     font-size: x-large;
 }
 
-.about-college .contact-details h2{
-font-size: 20px;
-color: #EFAB00;
+.about-college .contact-details h2 {
+    font-size: 20px;
+    color: #EFAB00;
 }
 
-.about-college img{
+.about-college img {
     border: 1px solid #EFAB00;
     background-color: #f2f2f2;
 }
 
-.about-college h3{
-    background: linear-gradient(#EFAB00,white);
+.about-college h3 {
+    background: linear-gradient(#EFAB00, white);
     display: inline-block;
     font-size: 14px;
     font-weight: bolder;
     color: white;
     padding: 10px;
 }
+
 .google-map {
     border: 1px solid #EFAB00;
     margin: 40px auto;
@@ -538,11 +546,46 @@ color: #EFAB00;
 
 /* RULES AND REGULATIONS */
 
-.rules-regulation li i{
+.rules-regulation li i {
     color: #EFAB00;
 }
 
-.rules-regulation li{
+.rules-regulation li {
     display: flex;
     font-size: 14px;
+}
+
+.college-profile h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.college-profile h2 {
+    font-size: 22px;
+}
+
+.college-profile table {
+    margin: 20px 0;
+}
+
+.college-profile table tr td:nth-child(odd) {
+    font-size: 13px;
+    text-wrap: nowrap;
+}
+
+.college-profile table tr td:nth-child(even) {
+    font-size: 13px;
+    padding-left: 100px;
+}
+
+
+.college-profile h2::after {
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #EFAB00;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
 }
