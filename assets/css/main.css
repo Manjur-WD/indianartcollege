@@ -459,6 +459,10 @@ footer .bottom-head p {
     padding: 20px 50px;
 }
 
+.rules-and-regulations{
+    border-bottom: 4px solid #EFAB00;
+}
+
 .about-college .breadcrumb-wrap,
 .rules-and-regulations .breadcrumb-wrap {
     background: linear-gradient(to right, white, white);
