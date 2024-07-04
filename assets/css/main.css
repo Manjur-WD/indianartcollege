@@ -455,7 +455,8 @@ footer .bottom-head p {
 
 /* ABOUT PAGE */
 
-.about-college {
+.about-college,
+.rules-and-regulations {
     padding: 20px 50px;
 }
 
