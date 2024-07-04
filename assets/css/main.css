@@ -22,7 +22,7 @@
 
 
 body {
-    background: url(../images/BG-01.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.521)), url(../images/BG-01.png);
     font-family: "Poppins", sans-serif;
 }
 
