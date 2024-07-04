@@ -676,12 +676,12 @@ footer .bottom-head p {
     padding-left: 30px;
 }
 
-.our-courses.our-departments{
+.our-courses.our-departments {
     border: none;
     margin: 30px 0;
 }
 
-.our-courses.our-departments h2::after{
+.our-courses.our-departments h2::after {
     display: none;
 }
 
@@ -697,6 +697,143 @@ footer .bottom-head p {
     font-size: 16px;
     border-bottom: 1px solid #EFAB00;
 }
+
+.tf-daysection p,
+.tf-evesection p {
+    font-weight: bold;
+    color: #EFAB00;
+}
+
+.tf-daysection ul li,
+.tf-evesection ul li,
+.non-teach-staff ul li {
+    font-weight: 600;
+}
+
+.tf-daysection ul li span,
+.tf-evesection ul li span,
+.non-teach-staff ul li span {
+    color: gray;
+    margin-left: 3px;
+}
+
+.non-teach-staff ul li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #EFAB00;
+}
+
+.input-box {
+    display: flex;
+    align-items: baseline;
+    border: 1px solid black;
+    width: 300px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.input-box label {
+    text-wrap: nowrap;
+    border-right: 1px solid black;
+    padding: 5px;
+    width: 30%;
+}
+
+.input-box input {
+    border: none;
+}
+
+.application-form table,
+th,
+td {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+    padding: 10px;
+}
+
+#ain {
+    background: #EFAB00;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.photo {
+    width: 200px;
+    height: 200px;
+    background-color: #EFAB00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.signature {
+    width: 200px;
+    height: 50px;
+    background-color: #dbdad6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.ain {
+    margin-top: 150px;
+}
+
+.short-descrip tr th ,
+.academic-details tr th {
+    background-color: #EFAB00;
+    color: white;
+    text-align: center;
+}
+
+.all-details table{
+    width: 100%;
+}
+
+.all-details table tr {
+    border: 1px solid black;
+}
+
+.all-details table input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.academic-details input{
+    background-color: white;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+.result-upload div label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2B2D36;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.result-upload div label i{
+    color: #EFAB00;
+}
+
+.academic-details tr th,
+.academic-details tr td input{
+    width: 16%;
+}
+
+
 
 @media(max-width:600px) {
     .college-profile table tr td:nth-child(even) {
