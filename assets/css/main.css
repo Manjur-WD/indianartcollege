@@ -578,6 +578,11 @@ footer .bottom-head p {
     padding-left: 100px;
 }
 
+@media(max-width:600px){
+    .college-profile table tr td:nth-child(even) {
+        padding-left: 0px;
+    }
+}
 
 .college-profile h2::after {
     content: "";
