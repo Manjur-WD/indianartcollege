@@ -24,6 +24,7 @@
 body {
     background: linear-gradient(rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.521)), url(../images/BG-01.png);
     font-family: "Poppins", sans-serif;
+    background-attachment: fixed;
 }
 
 .font-mont {
@@ -454,10 +455,10 @@ footer .bottom-head p {
 }
 
 
-
 .about-college,
 .rules-and-regulations,
-.college-profile {
+.college-profile,
+.governing-body {
     padding: 20px 50px;
 }
 
@@ -468,7 +469,8 @@ footer .bottom-head p {
 
 .about-college .breadcrumb-wrap,
 .rules-and-regulations .breadcrumb-wrap,
-.college-profile .breadcrumb-wrap {
+.college-profile .breadcrumb-wrap,
+.governing-body .breadcrumb-wrap {
     background: linear-gradient(to right, white, white);
     padding: 20px 20px;
     text-align: end;
@@ -477,7 +479,8 @@ footer .bottom-head p {
 
 .about-college .breadcrumb-wrap a,
 .rules-and-regulations .breadcrumb-wrap a,
-.college-profile .breadcrumb-wrap a {
+.college-profile .breadcrumb-wrap a,
+.governing-body .breadcrumb-wrap a {
     color: black;
     font-weight: 500;
     text-shadow: 0 0 10px #EFAB00;
@@ -486,21 +489,25 @@ footer .bottom-head p {
 
 .about-college .breadcrumb-wrap a:hover,
 .rules-and-regulations .breadcrumb-wrap a:hover,
-.college-profile .breadcrumb-wrap a:hover {
+.college-profile .breadcrumb-wrap a:hover,
+.governing-body .breadcrumb-wrap a:hover {
     display: inline-block;
     scale: 0.9;
 }
 
 .about-college .breadcrumb-wrap a.active,
 .rules-and-regulations .breadcrumb-wrap a.active,
-.college-profile .breadcrumb-wrap a.active {
+.college-profile .breadcrumb-wrap a.active,
+.governing-body .breadcrumb-wrap a.active {
     color: #EFAB00;
     text-shadow: 0 0 10px white;
 }
 
 .about-content .head-start,
 .rules-and-regulations-content .head-start,
-.college-profile .head-start {
+.college-profile .head-start,
+.college-profile .head-start,
+.governing-body-content .head-start {
     display: inline-block;
     color: #EFAB00;
     border: 1px solid black;
@@ -553,38 +560,85 @@ footer .bottom-head p {
 .rules-regulation li {
     display: flex;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
-.college-profile h2 {
+.college-profile h2,
+.governing-body h2 {
     position: relative;
     display: inline-block;
 }
 
-.college-profile h2 {
+
+.college-profile h2,
+.rules-and-regulations-content h2,
+.governing-body-content h2 {
     font-size: 22px;
 }
 
 .college-profile table {
+    width: 100%;
     margin: 20px 0;
 }
 
-.college-profile table tr td:nth-child(odd) {
+.college-profile table tr td:nth-child(odd),
+.members-ugc table tr td:nth-child(odd),
+.members-ugc table tr th:nth-child(odd),
+.governing-body table tr td:nth-child(odd),
+.college-profile p {
     font-size: 13px;
     text-wrap: nowrap;
+    font-weight: bold;
 }
 
-.college-profile table tr td:nth-child(even) {
+.college-profile table tr th span {
+    font-size: 13px;
+    background-color: #EFAB00;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.college-profile table tr td:nth-child(even),
+.members-ugc table tr td:nth-child(even),
+.academic-council table tr td:nth-child(even) {
     font-size: 13px;
     padding-left: 100px;
 }
 
-@media(max-width:600px){
-    .college-profile table tr td:nth-child(even) {
-        padding-left: 0px;
-    }
+.members-ugc table tr td:nth-child(even),
+.teachers-council table tr td:nth-child(even) {
+    padding-left: 0px !important;
+    padding: 5px 0;
 }
 
-.college-profile h2::after {
+.members-ugc table tr th {
+    padding-bottom: 10px;
+}
+
+.ugc-recognition table,
+.governing-body table {
+    width: 100%;
+}
+
+.ugc-recognition td,
+.members-ugc td,
+.academic-council td {
+    width: 70%;
+}
+
+.governing-body table tr td:nth-child(odd) {
+    width: 30%;
+}
+
+.college-profile hr {
+    color: #EFAB00;
+}
+
+.college-profile h2::after,
+.rules-and-regulations-content h2::after,
+.governing-body h2::after {
     content: "";
     height: 1px;
     width: 100px;
@@ -593,4 +647,48 @@ footer .bottom-head p {
     position: absolute;
     right: 0;
     margin-top: 5px;
+}
+
+.governing-body h3{
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 30px 0;
+}
+
+.governing-body tr {
+
+    border-bottom: 1px solid #EFAB00;
+    margin: 30px 0;
+}
+
+.governing-body tr td{
+    font-size: 13px;
+    padding: 20px 0;
+}
+.governing-body .our-departments{
+    border-left: 2px solid #EFAB00;
+    padding-left: 30px;
+}
+
+.governing-body .dept-card{
+    margin-bottom: 20px;
+}
+
+.governing-body .dept-card img{
+    height: 150px !important;
+}
+
+@media(max-width:600px) {
+    .college-profile table tr td:nth-child(even) {
+        padding-left: 0px;
+    }
+
+    .members-ugc table {
+        width: 100%;
+    }
+
+    .college-profile table tr td:nth-child(odd) {
+        text-wrap: wrap;
+        padding-right: 20px;
+    }
 }
