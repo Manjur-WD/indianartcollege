@@ -64,3 +64,54 @@ window.addEventListener("scroll", () => {
     mainHead.classList.remove("fixed-top"); // Remove 'fixed' class
   }
 });
+
+
+const imagesBox1 = [
+  "./assets/images/album/img6.webp",
+  "./assets/images/album/img5.jpg",
+  "./assets/images/album/img4.jpg",
+  "./assets/images/album/img3.jpg",
+  "./assets/images/album/img2.jfif",
+  "./assets/images/album/img1.jpg",
+  
+];
+
+const imagesBox2 = [
+  "./assets/images/album/img1.jpg",
+  "./assets/images/album/img2.jfif",
+  "./assets/images/album/img3.jpg",
+  "./assets/images/album/img5.jpg",
+  "./assets/images/album/img4.jpg",
+  "./assets/images/album/img6.webp",
+];
+
+let currentIndexBox1 = 0;
+let currentIndexBox2 = 0;
+
+const box1Current = document.getElementById('box1-current');
+const box1Next = document.getElementById('box1-next');
+const box2Current = document.getElementById('box2-current');
+const box2Next = document.getElementById('box2-next');
+
+function showNextImage(boxCurrent, boxNext, images, currentIndex) {
+  currentIndex = (currentIndex + 1) % images.length;
+  boxNext.src = images[currentIndex];
+  boxNext.classList.add('show');
+  boxCurrent.classList.add('fade-out');
+
+  setTimeout(() => {
+      boxCurrent.src = images[currentIndex];
+      boxCurrent.classList.remove('fade-out');
+      boxNext.classList.remove('show');
+  }, 1000); // Duration of the fade effect
+
+  return currentIndex;
+}
+
+setInterval(() => {
+  currentIndexBox1 = showNextImage(box1Current, box1Next, imagesBox1, currentIndexBox1);
+}, 3000);
+
+setInterval(() => {
+  currentIndexBox2 = showNextImage(box2Current, box2Next, imagesBox2, currentIndexBox2);
+}, 3000);
