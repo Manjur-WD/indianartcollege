@@ -454,6 +454,27 @@ footer .bottom-head p {
     /* Still needed for visibility */
 }
 
+.submenu{
+    color: #EFAB00 !important;
+}
+.submenu:hover{
+    color: white  !important;
+}
+
+.sub-dropdown-menu{
+    color: #EFAB00;
+    border-top: 1px solid #EFAB00;
+    border-bottom: 1px solid #EFAB00;
+}
+
+.sub-dropdown-menu hr{
+    background-color: #EFAB00 !important;
+}
+
+.submenu:hover .sub-dropdown-menu{
+    display: block !important;
+}
+
 .dropdown-menu li a {
     color: orange;
     font-size: 12px;
