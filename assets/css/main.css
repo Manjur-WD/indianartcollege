@@ -142,13 +142,13 @@ header .online-admission {
     font-size: 12px;
 }
 
-.img-bottom{
+.img-bottom {
     margin-top: -10px;
 }
 
 
 .slideshow-container {
-    width:55%;
+    width: 55%;
     height: 150px;
     margin: auto;
     overflow: hidden;
@@ -454,24 +454,38 @@ footer .bottom-head p {
     /* Still needed for visibility */
 }
 
-.submenu{
+.submenu {
     color: #EFAB00 !important;
 }
-.submenu:hover{
-    color: white  !important;
+
+.submenu:hover {
+    color: white !important;
 }
 
-.sub-dropdown-menu{
+.sub-dropdown-menu {
     color: #EFAB00;
     border-top: 1px solid #EFAB00;
     border-bottom: 1px solid #EFAB00;
 }
 
-.sub-dropdown-menu hr{
-    background-color: #EFAB00 !important;
+.sub-dropdown-menu li {
+    padding: 0 10px;
 }
 
-.submenu:hover .sub-dropdown-menu{
+.sub-dropdown-menu li:hover {
+    background-color: black;
+    color: white;
+}
+
+.sub-dropdown-menu li a {
+    text-wrap: nowrap;
+}
+
+.sub-dropdown-menu li a:hover {
+    background-color: black !important;
+}
+
+.submenu:hover .sub-dropdown-menu {
     display: block !important;
 }
 
@@ -488,6 +502,72 @@ footer .bottom-head p {
 .fixed-top {
     animation: slideDown 0.3s ease-in-out;
 }
+
+.application-form-body {
+    border-top: 5px solid #EFAB00;
+    border-bottom: 5px solid #EFAB00;
+}
+
+.application-form-body h1 {
+    color: #EFAB00;
+    font-weight: bold;
+}
+
+.application-form-body h2 {
+    color: darkred;
+}
+
+.application-form-body form {
+    color: #A2A2A2;
+}
+
+.application-form-body .form-check-input:checked {
+    background-color: #EFAB00;
+    border-color: #EFAB00;
+}
+
+.application-form-body .form-check-input[type=radio] {
+    border: 1px solid #EFAB00;
+    border-radius: 5px;
+}
+
+.adm-form-title {
+    font-size: 5vmin;
+    text-align: center;
+    font-weight: bolder;
+    color: #EFAB00;
+    border-bottom: 1px solid #EFAB00;
+    display: inline-block;
+}
+
+.adm-form-title::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #EFAB00;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.adm-form-title::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #EFAB00;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.img-sign-upload img,
+.sign-upload img,
+.gurdian-sign-upload img {
+    width: 120px;
+}
+
+
+
 
 @keyframes slideDown {
     from {
@@ -891,24 +971,65 @@ footer .bottom-head p {
     width: 16%;
 }
 
-.department img{
+.department img {
     width: 100%;
     height: 400px;
     object-position: center;
     object-fit: cover;
 }
 
+.input-box-guard {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #A2A2A2;
+    padding: 4px 5px;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.input-box-guard label {
+    margin: 0;
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+
+.input-box-guard input{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.input-box-guard input:focus{
+    border: none;
+    outline: none;
+}
+
+.input-box-guard .form-check-input[type=radio] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50% !important;
+    border: 1px solid #EFAB00;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+
 
 
 @media(max-width:600px) {
 
     .slideshow-container {
-        width:55%;
+        width: 55%;
         height: 240px;
         margin: auto;
         overflow: hidden;
         position: relative;
     }
+
     .college-profile table tr td:nth-child(even) {
         padding-left: 0px;
     }
