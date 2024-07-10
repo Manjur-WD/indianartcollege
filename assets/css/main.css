@@ -542,7 +542,7 @@ footer .bottom-head p {
 
 .adm-form-title::after {
     content: "";
-    width: 50px;
+    width: 150px;
     height: 2px;
     border-radius: 50%;
     background-color: #EFAB00;
@@ -552,7 +552,7 @@ footer .bottom-head p {
 
 .adm-form-title::before {
     content: "";
-    width: 50px;
+    width: 150px;
     height: 2px;
     border-radius: 50%;
     background-color: #EFAB00;
@@ -560,10 +560,23 @@ footer .bottom-head p {
     margin: 0 2px;
 }
 
+@media(max-width: 768px) {
+
+    .adm-form-title::before,
+    .adm-form-title::after {
+        width: 50px;
+    }
+}
+
+.submit-form button{
+    background-color: #EFAB00;
+    border: none;
+}
+
 .img-sign-upload img,
 .sign-upload img,
 .gurdian-sign-upload img {
-    width: 120px;
+    width: 150px;
 }
 
 
@@ -997,12 +1010,12 @@ footer .bottom-head p {
     text-wrap: nowrap;
 }
 
-.input-box-guard input{
+.input-box-guard input {
     width: 100%;
     margin-left: 10px;
 }
 
-.input-box-guard input:focus{
+.input-box-guard input:focus {
     border: none;
     outline: none;
 }
@@ -1041,5 +1054,9 @@ footer .bottom-head p {
     .college-profile table tr td:nth-child(odd) {
         text-wrap: wrap;
         padding-right: 20px;
+    }
+
+    .hero-carousel .carousel{
+        height: 300px;
     }
 }
