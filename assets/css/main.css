@@ -526,7 +526,7 @@ footer .bottom-head p {
     border-color: #EFAB00;
 }
 
-.application-form-body .form-check-input[type=radio] {
+.application-form-body .form-check-input[type=checkbox] {
     border: 1px solid #EFAB00;
     border-radius: 5px;
 }
@@ -1030,7 +1030,37 @@ footer .bottom-head p {
 }
 
 
+.application-form-body table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .application-form-body th,.application-form-body td {
+    border: 1px solid #686767;
+    padding: 8px;
+    text-align: center;
+    color:#000;
+    font-size: 12px;
+  }
+  .application-form-body th {
+    background-color: #EFAB00;
+    color:#000
+  }
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 6px;
+  }
 
+  .application-form-body h2{
+    text-transform: uppercase !important;
+    font-weight: 600;
+  }
+
+  .application-form-body label{
+    font-size: 14px;
+    text-transform: uppercase;
+  }
 
 
 @media(max-width:600px) {

@@ -158,12 +158,13 @@
           </div>
         </div>
       </nav>
-      <a href="form-application.html" class="online-admission bg-dark text-white py-1 px-2 rounded-pill d-inline-block"><i class="ri-article-fill docs-icon me-1"></i>Online Admission<i
-          class="ri-arrow-right-circle-line ms-1"></i></a>
+      <a href="form-application.html"
+        class="online-admission bg-dark text-white py-1 px-2 rounded-pill d-inline-block"><i
+          class="ri-article-fill docs-icon me-1"></i>Online Admission<i class="ri-arrow-right-circle-line ms-1"></i></a>
     </div>
   </header>
   <main>
-    <div class="container application-form-body p-lg-5 p-3">
+    <div class="container application-form-body my-4 p-lg-5 p-3">
       <div class="form-header text-center">
         <h1 class="text-uppercase text-center">
           The Indian College of Arts & Draftsmanship
@@ -183,34 +184,34 @@
 
         <div class="row align-items-end">
           <div class="col-md-9">
-            <h2 class="fs-5">Select Any One Option</h2>
+            <h2 class="fs-5">Select Course <span class="text-secondary fs-6">(**Candidate may apply maximum 2
+                courses)</span></h2>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-              <label class="form-check-label" for="flexRadioDefault1">
+              <input class="form-check-input" type="checkbox" name="course" id="course1" />
+              <label class="form-check-label" for="course1">
                 Painting Department B.F.A. (Bachelor of Fine Arts)
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-              <label class="form-check-label" for="flexRadioDefault2">
+              <input class="form-check-input" type="checkbox" name="course" id="course2" />
+              <label class="form-check-label" for="course2">
                 Applied Art Department B.F.A. (Bachelor of Fine Arts)
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
-              <label class="form-check-label" for="flexRadioDefault3">
+              <input class="form-check-input" type="checkbox" name="course" id="course3" />
+              <label class="form-check-label" for="course3">
                 Sculpture Department B.F.A. (Bachelor of Fine Arts)
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" />
-              <label class="form-check-label" for="flexRadioDefault4">
-                Graphics (Print Making) Department B.F.A. (Bachelor of Fine
-                Arts)
+              <input class="form-check-input" type="checkbox" name="course" id="course4" />
+              <label class="form-check-label" for="course4">
+                Graphics (Print Making) Department B.F.A. (Bachelor of Fine Arts)
               </label>
             </div>
             <div class="input-box-guard">
-              <label for="#">NAME<span class="text-danger">*</span>:</label>
+              <label for="#">CANDIDATE FULL NAME<span class="text-danger">*</span>:</label>
               <input type="text" class="bg-0 border-0 outline-0" />
             </div>
             <div class="input-box-guard">
@@ -273,22 +274,44 @@
           </div>
           <div class="col-md-4">
             <div class="input-box-guard">
+              <label for="#">MARITAL STATUS:</label>
+              <select name="" id="" class="bg-white border-0 w-100 text-center">
+                <option value="#">--SELECT OPTION--</option>
+                <option value="#">Married</option>
+                <option value="#">Un-married</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-box-guard">
               <label for="#">MOTHER TONGUE<span class="text-danger">*</span>:</label>
               <input type="text" class="bg-0 border-0 outline-0" />
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="input-box-guard">
-              <label for="#">AADHAAR NO<span class="text-danger">*</span>:</label>
+              <label for="#">NATIONALITY<span class="text-danger">*</span>:</label>
               <input type="text" class="bg-0 border-0 outline-0" />
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="input-box-guard">
-              <label for="#">GURDIAN'S AADHAAR NO<span class="text-danger">*</span>:</label>
-              <input type="text" class="bg-0 border-0 outline-0" />
+              <label for="#">BLOOD GROUP:</label>
+              <select name="" id="" class="bg-white border-0 w-100 text-center">
+                <option value="#">--SELECT BLOOD GROUP--</option>
+                <option value="#">A+</option>
+                <option value="#">B+</option>
+                <option value="#">AB+</option>
+                <option value="#">O+</option>
+                <option value="#">O-</option>
+                <option value="#">AB-</option>
+                <option value="#">B-</option>
+                <option value="#">A-</option>
+              </select>
             </div>
           </div>
+
+
         </div>
         <h2 class="fs-5 mt-4">Permanent Address</h2>
         <div class="row">
@@ -328,57 +351,69 @@
               <input type="text" class="bg-0 border-0 outline-0" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-12">
             <div class="input-box-guard">
-              <label for="#">PHONE<span class="text-danger">*</span>:</label>
-              <input type="text" class="bg-0 border-0 outline-0" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="input-box-guard">
-              <label for="#">WHATSAPP NO<span class="text-danger">*</span>:</label>
-              <input type="text" class="bg-0 border-0 outline-0" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="input-box-guard">
-              <label for="#">EMAIL ID<span class="text-danger">*</span>:</label>
+              <label for="#">Distance from nearest railway station / bus sto to the collage in K.M<span
+                  class="text-danger">*</span>:</label>
               <input type="text" class="bg-0 border-0 outline-0" />
             </div>
           </div>
         </div>
-        <h2 class="fs-5 mt-4">Local Address(If Any)</h2>
+
+        <h2 class="fs-5 mt-4">Contact Details</h2>
         <div class="row">
-          <div class="col-md-12">
-            <textarea name="" id="" cols="" rows="5" class="w-100"></textarea>
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="#">PHONE NO<span class="text-danger">*</span>:</label>
+              <input type="number" class="bg-0 border-0 outline-0" />
+            </div>
           </div>
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="#">WHATSSAPP NO<span class="text-danger">*</span>:</label>
+              <input type="number" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="#">ALTERNATE PHONE NO<span class="text-danger">*</span>:</label>
+              <input type="number" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="input-box-guard">
+              <label for="#">EMAIL ID<span class="text-danger">*</span>:</label>
+              <input type="email" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+
+
+        </div>
+        <h2 class="fs-5 mt-4 text-capitalize">STUDENT DETAILS</h2>
+        <div class="row">
           <div class="col-md-6">
             <div class="input-box-guard">
-              <label for="#">BLOOD GROUP:</label>
-              <select name="" id="" class="bg-white border-0 w-100 text-center">
-                <option value="#">--SELECT BLOOD GROUP--</option>
-                <option value="#">A+</option>
-                <option value="#">B+</option>
-                <option value="#">AB+</option>
-                <option value="#">O+</option>
-                <option value="#">O-</option>
-                <option value="#">AB-</option>
-                <option value="#">B-</option>
-                <option value="#">A-</option>
-              </select>
+              <label for="#">AADHAAR NO<span class="text-danger">*</span>:</label>
+              <input type="text" class="bg-0 border-0 outline-0" />
             </div>
           </div>
           <div class="col-md-6">
             <div class="input-box-guard">
-              <label for="#">RELIGION:</label>
-              <select name="" id="" class="bg-white border-0 w-100 text-center">
-                <option value="#">--SELECT RELIGION--</option>
-                <option value="#">Christian</option>
-                <option value="#">Islam</option>
-                <option value="#">Hindu</option>
-                <option value="#">Buddhism</option>
-                <option value="#">Jainism</option>
-              </select>
+              <label for="#" class="text-uppercase">Belong to minority group<span class="text-danger">*</span>:</label>
+              <div class="d-flex align-items-center">
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input" type="radio" name="minority" id="flexRadioDefault1" />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    YES
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center ms-2">
+                  <input class="form-check-input" type="radio" name="minority" id="flexRadioDefault2" />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
@@ -392,15 +427,18 @@
                 <option value="OBC">OBC</option>
               </select>
             </div>
-            <blockquote>Note <span class="text-danger">**</span>: Other State SC/ST/OBC will be treated as general
+            <blockquote class="m-0">Note <span class="text-danger">**</span>: Other State SC/ST/OBC will be treated as
+              general
               categories.</blockquote>
           </div>
-
           <div class="col-md-6">
             <div class="input-box-guard">
-              <label for="#">NATIONALITY:</label>
-              <select name="" id="" class="bg-white border-0 w-100 text-center">
-                <option value="#">--SELECT NATIONALITY--</option>
+              <label for="caste-select">CASTE CERTIFICATE ISSUE YEAR:</label>
+              <select name="caste" class="bg-white border-0 w-100 text-center">
+                <option value="#">--SELECT YEAR--</option>
+                <option value="#">2010</option>
+                <option value="#">2011</option>
+                <option value="#">2012</option>
               </select>
             </div>
           </div>
@@ -410,53 +448,264 @@
               <input type="text" class="bg-0 border-0 outline-0">
             </div>
           </div>
-        </div>
-        <h2 class="fs-5 mt-4">Family Details</h2>
-        <div class="row">
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="#" class="text-uppercase">BPL/Antyodaya<span class="text-danger">*</span>:</label>
+              <div class="d-flex align-items-center">
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input" type="radio" name="anto" id="flexRadioDefault1" />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    YES
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center ms-2">
+                  <input class="form-check-input" type="radio" name="anto" id="flexRadioDefault2" />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="#">Card Number:</label>
+              <input type="text" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="caste-select">ISSUE YEAR:</label>
+              <select name="caste" class="bg-white border-0 w-100 text-center">
+                <option value="#">--SELECT YEAR--</option>
+                <option value="#">2010</option>
+                <option value="#">2011</option>
+                <option value="#">2012</option>
+              </select>
+            </div>
+          </div>
           <div class="col-md-6">
             <div class="input-box-guard">
-              <label for="#">GURDIANS NAME:</label>
+              <label for="#" class="text-uppercase">Kanyashree<span class="text-danger">*</span>:</label>
+              <div class="d-flex align-items-center">
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input" type="radio" name="anto" id="flexRadioDefault1" />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    YES
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center ms-2">
+                  <input class="form-check-input" type="radio" name="anto" id="flexRadioDefault2" />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-box-guard">
+              <label for="#">Kanyashree ID No.</label>
               <input type="text" class="bg-0 border-0 outline-0" />
             </div>
           </div>
           <div class="col-md-6">
             <div class="input-box-guard">
-              <label for="#">RELATIONSHIP WITH APPLICANT:</label>
-              <input type="text" class="bg-0 border-0 outline-0" />
+              <label for="#" class="text-uppercase">Swami Vivekananda Scholarship<span
+                  class="text-danger">*</span>:</label>
+              <div class="d-flex align-items-center">
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input" type="radio" name="svmcm" id="flexRadioDefault1" />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    YES
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center ms-2">
+                  <input class="form-check-input" type="radio" name="svmcm" id="flexRadioDefault2" />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="input-box-guard">
-              <label for="#">QUALIFICATION:</label>
+              <label for="#">SVMCM ID NO.</label>
               <input type="text" class="bg-0 border-0 outline-0" />
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="input-box-guard">
-              <label for="#">OCCUPATION:</label>
-              <input type="text" class="bg-0 border-0 outline-0" />
+              <label for="#" class="text-uppercase">Sports Proficiency<span class="text-danger">*</span>:</label>
+              <div class="d-flex align-items-center">
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input" type="radio" name="svmcm" id="flexRadioDefault1" />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    YES
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center ms-2">
+                  <input class="form-check-input" type="radio" name="svmcm" id="flexRadioDefault2" />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-4">
             <div class="input-box-guard">
-              <label for="#">APPROXIMATE ANNUAL INCOME:</label>
-              <input type="text" class="bg-0 border-0 outline-0" />
+              <label for="#" class="text-uppercase">Whether person with disability<span
+                  class="text-danger">*</span>:</label>
+              <div class="d-flex align-items-center">
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input" type="radio" name="svmcm" id="flexRadioDefault1" />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    YES
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center ms-2">
+                  <input class="form-check-input" type="radio" name="svmcm" id="flexRadioDefault2" />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    NO
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="input-box-guard">
-              <label for="#">PHONE NO:</label>
-              <input type="text" class="bg-0 border-0 outline-0" />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="input-box-guard">
-              <label for="#">EMAIL ID:</label>
+              <label for="#">% disability:</label>
               <input type="text" class="bg-0 border-0 outline-0" />
             </div>
           </div>
 
+
         </div>
+
+        <h2 class="fs-5 mt-4">LOCAL ADDRESS (IF ANY)</h2>
+        <textarea name="" id="" rows="3" class="w-100 rounded-2 border-secondary"></textarea>
+        <h2 class="fs-5 mt-4">GURDIAN DETAILS</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="#">Guardian's Name<span class="text-danger">*</span>:</label>
+              <input type="text" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="#">Relationship With The Applicant<span class="text-danger">*</span>:</label>
+              <input type="text" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-box-guard">
+              <label for="#">Qualification<span class="text-danger">*</span>:</label>
+              <input type="text" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-box-guard">
+              <label for="#">Occupation<span class="text-danger">*</span>:</label>
+              <input type="text" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-box-guard">
+              <label for="#">Guardian's Aadhar Card Number<span class="text-danger">*</span>:</label>
+              <input type="text" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-box-guard">
+              <label for="#">Approximate Annual Income*<span class="text-danger">*</span>:</label>
+              <input type="text" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-box-guard">
+              <label for="#">Phone No<span class="text-danger">*</span>:</label>
+              <input type="number" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-box-guard">
+              <label for="#">What’sapp No<span class="text-danger">*</span>:</label>
+              <input type="number" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-box-guard">
+              <label for="#">EMAIL ID<span class="text-danger">*</span>:</label>
+              <input type="email" class="bg-0 border-0 outline-0" />
+            </div>
+          </div>
+        </div>
+
+        <h2 class="fs-5 mt-4 text-capitalize">Academic Records</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Exam Passed</th>
+              <th>Board/University</th>
+              <th>Year of Passing</th>
+              <th>Specialization</th>
+              <th>Subjects</th>
+              <th>Marks Obtained</th>
+              <th>Full Marks</th>
+              <th>% of Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Secondary (Class 10)</td>
+              <td><input type="text" name="sec_board" /></td>
+              <td><input type="text" name="sec_year" /></td>
+              <td><input type="text" name="sec_specialization" /></td>
+              <td><input type="text" name="sec_subjects" /></td>
+              <td><input type="text" name="sec_marks_obtained" /></td>
+              <td><input type="text" name="sec_full_marks" /></td>
+              <td><input type="text" name="sec_percent" /></td>
+            </tr>
+            <tr>
+              <td rowspan="4">Higher Secondary (Class 12)</td>
+              <td rowspan="4"><input type="text" name="hs_board" /></td>
+              <td rowspan="4"><input type="text" name="hs_year" /></td>
+              <td>1st of best 4 Subjects</td>
+              <td><input type="text" name="hs_subject1_marks_obtained" /></td>
+              <td><input type="text" name="hs_subject1_full_marks" /></td>
+              <td><input type="text" name="hs_subject1_percent" /></td>
+              <td><input type="text" name="hs_subject1_percent" /></td>
+            </tr>
+            <tr>
+              
+              <td>2nd of best 4 Subjects</td>
+              <td><input type="text" name="hs_subject2_marks_obtained" /></td>
+              <td><input type="text" name="hs_subject2_full_marks" /></td>
+              <td><input type="text" name="hs_subject2_percent" /></td>
+              <td><input type="text" name="hs_subject2_percent" /></td>
+            </tr>
+            <tr>
+            
+              <td>3rd of best 4 Subjects</td>
+              <td><input type="text" name="hs_subject3_marks_obtained" /></td>
+              <td><input type="text" name="hs_subject3_full_marks" /></td>
+              <td><input type="text" name="hs_subject3_percent" /></td>
+              <td><input type="text" name="hs_subject3_percent" /></td>
+            </tr>
+            <tr>
+              
+              <td>4th of best 4 Subjects</td>
+              <td><input type="text" name="hs_subject4_marks_obtained" /></td>
+              <td><input type="text" name="hs_subject4_full_marks" /></td>
+              <td><input type="text" name="hs_subject4_percent" /></td>
+              <td><input type="text" name="hs_subject4_percent" /></td>
+            </tr>
+          </tbody>
+        </table>
+
 
         <div class="submit-form text-center mt-4">
           <button class="btn btn-dark px-4 rounded-pill fw-bold" type="submit">SUBMIT FORM</button>
@@ -589,13 +838,34 @@
       previewImage(this, 'preview-image-upload-3');
     });
 
-    document.getElementById('caste-select').addEventListener('change', function() {
+    document.getElementById('caste-select').addEventListener('change', function () {
       const casteCertContainer = document.getElementById('caste-cert-container');
       if (this.value === 'GENERAL') {
         casteCertContainer.classList.add('d-none');
       } else {
         casteCertContainer.classList.remove('d-none');
       }
+    });
+
+    function limitCheckboxes() {
+      const checkboxes = document.querySelectorAll('.form-check-input');
+      let checkedCount = 0;
+
+      checkboxes.forEach(checkbox => {
+        if (checkbox.checked) checkedCount++;
+      });
+
+      if (checkedCount > 2) {
+        alert("You are not allowed to select more than 2 courses.");
+        this.checked = false;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const checkboxes = document.querySelectorAll('.form-check-input');
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', limitCheckboxes);
+      });
     });
   </script>
 </body>
