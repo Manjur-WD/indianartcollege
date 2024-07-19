@@ -23,6 +23,10 @@
     color: #EFAB00;
 }
 
+.secondary-color{
+    color: brown;
+}
+
 body {
     background: linear-gradient(rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.521)), url(../images/BG-01.png);
     font-family: "Poppins", sans-serif;
@@ -413,6 +417,10 @@ header .online-admission {
 footer {
     /* background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.299)), url(../images/lower\ BG-01.jpg) no-repeat center/cover; */
     background: url(../images/lower\ BG-01.jpg) no-repeat center/cover;
+}
+
+footer form input{
+    width: 250px !important;
 }
 
 footer .top-foot {
@@ -1102,19 +1110,24 @@ footer .bottom-head p {
     width: 100%;
   }
 
-  .notice .notice-body section tr{
+  .notice .notice-body section tr,
+  .fees tr{
     border: none;
   }
 
   .notice .notice-body section th,
+  .fees th,
+  .fees td,
   .notice .notice-body section td{
     padding: 5px 10px;
   }
 
-  .notice .notice-body section th:nth-child(odd){
+  .notice .notice-body section th:nth-child(odd)
+  .fees th:nth-child(odd){
     text-align: center;
   }
-  .notice .notice-body section td:nth-child(odd){
+  .notice .notice-body section td:nth-child(odd),
+  .fees td:nth-child(odd){
     font-weight: normal;
   }
 
@@ -1136,6 +1149,11 @@ footer .bottom-head p {
   .notice-btn:hover{
     color: white;
     background-color: #000;
+  }
+
+  .fees tr,
+  .fees tr td{
+    padding-left: 20px;
   }
 
 
