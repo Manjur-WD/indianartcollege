@@ -19,11 +19,11 @@
     font-family: myriad;
 }
 
-.primary-color{
+.primary-color {
     color: #EFAB00;
 }
 
-.secondary-color{
+.secondary-color {
     color: brown;
 }
 
@@ -289,7 +289,7 @@ header .online-admission {
     transition: top 0.1s linear;
 }
 
-.news-info .latest-news ul li ,
+.news-info .latest-news ul li,
 .notice .latest-news ul li {
     font-size: 16px;
     display: flex;
@@ -419,7 +419,7 @@ footer {
     background: url(../images/lower\ BG-01.jpg) no-repeat center/cover;
 }
 
-footer form input{
+footer form input {
     width: 250px !important;
 }
 
@@ -560,7 +560,8 @@ footer .bottom-head p {
     border-radius: 5px;
 }
 
-.notice,.adm-form-title{
+.notice,
+.adm-form-title {
     font-size: 3vmin !important;
 }
 
@@ -601,7 +602,7 @@ footer .bottom-head p {
     }
 }
 
-.submit-form button{
+.submit-form button {
     background-color: #EFAB00;
     border: none;
 }
@@ -1066,97 +1067,118 @@ footer .bottom-head p {
 .application-form-body table {
     width: 100%;
     border-collapse: collapse;
-  }
-  .application-form-body th,.application-form-body td {
+}
+
+.application-form-body th,
+.application-form-body td {
     border: 1px solid #686767;
     padding: 8px;
     text-align: center;
-    color:#000;
+    color: #000;
     font-size: 12px;
-  }
-  .application-form-body th {
+}
+
+.application-form-body th {
     background-color: #EFAB00;
-    color:#000
-  }
-  input[type="text"] {
+    color: #000
+}
+
+input[type="text"] {
     width: 100%;
     box-sizing: border-box;
     border: none;
     padding: 6px;
-  }
+}
 
-  .application-form-body h2{
+.application-form-body h2 {
     text-transform: uppercase !important;
     font-weight: 600;
-  }
+}
 
-  .application-form-body label{
+.application-form-body label {
     font-size: 14px;
     text-transform: uppercase;
-  }
+}
 
-  .notice .form-header h1{
+.notice .form-header h1 {
     font-size: 3vmin;
     font-weight: bold;
     color: #EFAB00;
-  }
+}
 
-  .notice .notice-body section{
+.notice .notice-body section {
     border-top: 15px solid #EFAB00;
     border-bottom: 15px solid #EFAB00;
-  }
+}
 
-  .notice .notice-body section table{
+.notice .notice-body section table {
     width: 100%;
-  }
+}
 
-  .notice .notice-body section tr,
-  .fees tr{
+.notice .notice-body section tr,
+.fees tr {
     border: none;
-  }
+}
 
-  .notice .notice-body section th,
-  .fees th,
-  .fees td,
-  .notice .notice-body section td{
+.notice .notice-body section th,
+.fees th,
+.fees td,
+.notice .notice-body section td {
     padding: 5px 10px;
-  }
+}
 
-  .notice .notice-body section th:nth-child(odd)
-  .fees th:nth-child(odd){
+.notice .notice-body section th:nth-child(odd) .fees th:nth-child(odd) {
     text-align: center;
-  }
-  .notice .notice-body section td:nth-child(odd),
-  .fees td:nth-child(odd){
+}
+
+.notice .notice-body section td:nth-child(odd),
+.fees td:nth-child(odd) {
     font-weight: normal;
-  }
+}
 
-  .notice .notice-body section th:nth-child(even),
-  .notice .notice-body section td:nth-child(even){
+.notice .notice-body section th:nth-child(even),
+.notice .notice-body section td:nth-child(even) {
     text-align: right;
-  }
+}
 
-  .apply-now-btn,
-  .notice-btn{
+.apply-now-btn,
+.notice-btn {
     background-color: #EFAB00;
     color: white;
     padding: 10px 20px;
     font-size: 14px;
     font-weight: bold;
-  }
+}
 
-  .apply-now-btn:hover,
-  .notice-btn:hover{
+.apply-now-btn:hover,
+.notice-btn:hover {
     color: white;
     background-color: #000;
-  }
+}
 
-  .fees tr,
-  .fees tr td{
+.fees tr,
+.fees tr td {
     padding-left: 20px;
-  }
+}
 
+marquee {
+    padding: 15px 0;
+    margin-top: 20px;
+    background-color: #dbdad6;
+    color: black;
+    border-top: 2px solid #EFAB00;
+    border-bottom: 2px solid #EFAB00;
+}
 
+marquee a{
+    color: black;
+}
+
+marquee span {
+    color: #EFAB00;
+    font-weight: 900;
+    padding: 0 20px;
+}
 
 @media(max-width:600px) {
 
@@ -1181,7 +1203,7 @@ footer .bottom-head p {
         padding-right: 20px;
     }
 
-    .hero-carousel .carousel{
+    .hero-carousel .carousel {
         height: 300px;
     }
 }

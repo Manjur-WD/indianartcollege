@@ -115,3 +115,15 @@ setInterval(() => {
 setInterval(() => {
   currentIndexBox2 = showNextImage(box2Current, box2Next, imagesBox2, currentIndexBox2);
 }, 3000);
+
+
+$(document).ready(function() {
+  $('marquee').hover(
+    function() {
+      this.stop();
+    },
+    function() {
+      this.start();
+    }
+  );
+});
