@@ -1162,7 +1162,8 @@ input[type="text"] {
 }
 
 marquee {
-    padding: 15px 0;
+    padding: 10px 0;
+    font-size: 14px;
     margin-top: 20px;
     background-color: #dbdad6;
     color: black;
